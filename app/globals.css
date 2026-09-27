@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+.layout-container{
+  display: flex;
+  justify-content:space-around;
+  flex-grow: 1;
+}
+
+.sidebar{
+  width: 250px;
+  text-align: center;
+  border: 10px dashed purple;
+}
+
+.mainbox{
+  flex-grow: 1;
+  text-align: center;
+  border: 10px dashed teal;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
