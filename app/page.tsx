@@ -1,11 +1,6 @@
-import Sidebar from '../components/sidebar'
 export default function Page() {
   return <>
-  <div className='layout-container'>
-    <div className='sidebar'>
-      <Sidebar />
-    </div>
-    <div className='mainbox'>
+  <div>
       <h1>
         Hello Utkarsh !!
       </h1>
@@ -17,6 +12,5 @@ export default function Page() {
         Existential Crisis
       </p>
     </div>
-  </div>
   </> 
 }

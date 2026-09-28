@@ -1,10 +1,19 @@
 export default function Sidebar() {
+
+    const playlists = ["Coding", "Gym", "Road Trip", "Late night vibes"];
+    const Navs = ["Home", "Search", "Library"];
     return <>
-        <h1>Vibes</h1>
+        <ul>
+            {Navs.map((nav) => (
+                <li key={nav}>{nav}</li>
+            ))}
+        </ul>
         <p>-------------------</p>
-        <p>Home <br /> Search <br /> Library</p>
-        <p>-------------------</p>
-        <p>Coding <br /> Gym <br /> Road Trip</p>
+        <ul>
+            {playlists.map((playlist) => (
+                <li key={playlist}>{playlist}</li>
+            ))}
+        </ul>
         <br />
     </>
 }
